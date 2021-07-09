@@ -36,8 +36,11 @@ import { Link } from 'react-router-dom';
       <Link to={"/Read/"+user.Id}>
       <Button className="acton-button" variant="success">Read</Button>
       </Link>
+      <Link to={"/Edit/"+user.Id}>
       <Button className="acton-button" variant="warning">Edit</Button>
+      </Link>
       <Link to={"/Delete/"+user.Id}>
+      
       <Button className="acton-button" variant="danger">Delete</Button>
       </Link>
      

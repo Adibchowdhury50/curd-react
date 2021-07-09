@@ -12,6 +12,7 @@ import { UserProvder } from './Components/Usercontext/UserContext';
 import Delete from './Components/Delete/Delete';
 import Read from './Components/Read/Read';
 import Create from './Components/Create/Create';
+import Edit from './Components/Edit/Edit';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
 
           <Route path="/Delete/:Id">
             <Delete/>
+          </Route>
+          <Route path="/Edit/:Id">
+            <Edit/>
           </Route>
           <Route path="/Read/:Id">
             <Read/>
