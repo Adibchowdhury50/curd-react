@@ -11,6 +11,7 @@ import Home from "./Components/Home/Home";
 import { UserProvder } from './Components/Usercontext/UserContext';
 import Delete from './Components/Delete/Delete';
 import Read from './Components/Read/Read';
+import Create from './Components/Create/Create';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
        
       <Router>
         <Switch>
+        <Route path="/Create/">
+            <Create/>
+          </Route>
+
           <Route path="/Delete/:Id">
             <Delete/>
           </Route>

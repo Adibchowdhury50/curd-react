@@ -12,7 +12,9 @@ import { Link } from 'react-router-dom';
     console.log(users);
         return (
             <div>
+              <Link to="/Create">
                 <Button variant="outline-primary">create user</Button>
+                </Link>
                 <Table striped bordered hover>
   <thead>
     <tr>
