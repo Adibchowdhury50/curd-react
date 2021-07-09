@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { UserContext } from '../Usercontext/UserContext';
 import { Button, Modal } from 'react-bootstrap';
+import "./delete.css";
 
  const Delete = () => {
 
@@ -25,7 +26,7 @@ import { Button, Modal } from 'react-bootstrap';
 
   <Modal.Footer>
     <Link to="/"> <Button onClick={() => deletUser(Id)} variant="secondary">Delete</Button>
-    <Button  variant="primary">Cancel</Button></Link>
+    <Button  className="action-button" variant="primary">Cancel</Button></Link>
   </Modal.Footer>
 </Modal.Dialog>
         </div>

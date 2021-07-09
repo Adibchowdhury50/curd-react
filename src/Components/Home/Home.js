@@ -13,9 +13,9 @@ import { Link } from 'react-router-dom';
         return (
             <div>
               <Link to="/Create">
-                <Button variant="outline-primary">create user</Button>
+                <Button className="create-user" variant="outline-primary">create user</Button>
                 </Link>
-                <Table striped bordered hover>
+                <Table striped bordered hover className="tbl">
   <thead>
     <tr>
       <th>Id</th>
